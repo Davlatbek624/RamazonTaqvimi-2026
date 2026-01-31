@@ -1,0 +1,116 @@
+{
+    "uz": {
+        "translation": {
+            "ramazonn": "Ramazon - 2026",
+            "ramazon": "RAMAZON",
+            "asosiy": "Asosiy",
+            "taqvim": "Taqvim",
+            "duolar": "Duolar",
+            "yangiliklar": "Yangiliklar",
+            "boglanish": "Bog'lanish",
+            "lang_btn": "Узб",
+            "menu": "Menyu",
+            "footer_desc": "2026-yilgi Ramazon taqvimi, duolar va barakali ma'lumotlar platformasi.",
+            "rights": "Barcha huquqlar himoyalangan",
+            "dev": "Dasturchi: Davlatbek",
+            "home": {
+                "heroTitle": "Ramazon Muborak — 2026",
+                "heroSubtitle": "Saharlik va iftorlik vaqtlari, duolar va Ramazon oyiga oid foydali ma’lumotlar",
+                "btnCalendar": "Taqvimni ko‘rish",
+                "btnDuas": "Duolar",
+                "cards": {
+                    "calendarTitle": "Aniq taqvim",
+                    "calendarDesc": "2026-yil Ramazon oyidagi saharlik va iftorlik vaqtlarini har kun uchun aniq kuzating.",
+                    "duaTitle": "Foydali duolar",
+                    "duaDesc": "Saharlik va iftorlik duolari hamda Ramazon oyiga oid eng muhim zikrlar.",
+                    "wisdomTitle": "Ma’naviy hikmatlar",
+                    "wisdomDesc": "Har bir kun uchun qalbni poklovchi hikmat va eslatmalar."
+                },
+                "today": {
+                    "title": "Bugungi kun",
+                    "saharlik": "Saharlik",
+                    "iftorlik": "Iftorlik",
+                    "note": "Alloh qilgan amallarimizni qabul qilsin"
+                }
+            },
+            "not_found": {
+                "title": "Sahifa topilmadi",
+                "message": "Uzr, siz qidirayotgan sahifa g'oyib bo'lgan ko'rinadi. Balki u iftorlikka ketgandir?",
+                "btn": "Asosiy sahifaga qaytish"
+            },
+            "titles": {
+                "taqvim": "Ramazon Taqvimi — 2026",
+                "duolar": "Muborak Duolar",
+                "yangiliklar": "So'nggi Yangiliklar",
+                "boglanish": "Biz bilan bog'lanish"
+            },
+            "duas": {
+                "saharlik": {
+                    "title": "Saharlik duosi",
+                    "text": "Navaytu an asuma sovma shahri ramazona minal fajri ilal mag‘ribi xolisan lillahi ta‘ala."
+                },
+                "iftorlik": {
+                    "title": "Iftorlik duosi",
+                    "text": "Allohumma laka sumtu va bika aamantu va ‘alayka tavakkaltu va ‘ala rizqika aftartu."
+                }
+            }
+        }
+    },
+    "уз": {
+        "translation": {
+            "ramazonn": "Рамазон - 2026",
+            "ramazon": "РАМАЗОН",
+            "asosiy": "Асосий",
+            "taqvim": "Тақвим",
+            "duolar": "Дуолар",
+            "yangiliklar": "Янгиликлар",
+            "boglanish": "Боғланиш",
+            "lang_btn": "Uzb",
+            "menu": "Меню",
+            "footer_desc": "2026-йилги Рамазон тақвими, дуолар ва баракали маълумотлар платформаси.",
+            "rights": "Барча ҳуқуқлар ҳимояланган",
+            "dev": "Дастурчи: Давлатбек",
+            "home": {
+                "heroTitle": "Рамазон муборак — 2026",
+                "heroSubtitle": "Саҳарлик ва ифторлик вақтлари, дуолар ва Рамазон ойига оид фойдали маълумотлар",
+                "btnCalendar": "Тақвимни кўриш",
+                "btnDuas": "Дуолар",
+                "cards": {
+                    "calendarTitle": "Аниқ тақвим",
+                    "calendarDesc": "2026-йил Рамазон ойидаги саҳарлик ва ифторлик вақтларини ҳар кун учун аниқ кузатинг.",
+                    "duaTitle": "Фойдали дуолар",
+                    "duaDesc": "Саҳарлик ва ифторлик дуолари ҳамда Рамазон ойига оид энг муҳим зикрлар.",
+                    "wisdomTitle": "Маънавий ҳикматлар",
+                    "wisdomDesc": "Ҳар бир кун учун қалбни покловчи ҳикмат ва эслатмалар."
+                },
+                "today": {
+                    "title": "Бугунги кун",
+                    "saharlik": "Саҳарлик",
+                    "iftorlik": "Ифторлик",
+                    "note": "Аллоҳ қилган амалларимизни қабул қилсин"
+                }
+            },
+            "not_found": {
+                "title": "Саҳифа топилмади",
+                "message": "Узр, сиз қидираётган саҳифа ғойиб бўлган кўринади. Балки у ифторликка кетгандир?",
+                "btn": "Асосий саҳифага қайтиш"
+            },
+            "titles": {
+                "taqvim": "Рамазон Тақвими — 2026",
+                "duolar": "Муборак Дуолар",
+                "yangiliklar": "Сўнгги Янгиликлар",
+                "boglanish": "Биз билан боғланиш"
+            },
+            "duas": {
+                "saharlik": {
+                    "title": "Саҳарлик дуоси",
+                    "text": "Навайту ан асума совма шаҳри рамазона минал фажри илал мағриби холисан лиллаҳи таоло."
+                },
+                "iftorlik": {
+                    "title": "Ифторлик дуоси",
+                    "text": "Аллоҳумма лака сумту ва бика аманту ва алайка таваккалту ва ала ризқика афтарту."
+                }
+            }
+        }
+    }
+}
