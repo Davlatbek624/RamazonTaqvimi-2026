@@ -53,7 +53,30 @@
                     "title": "Iftorlik duosi",
                     "text": "Allohumma laka sumtu va bika aamantu va ‘alayka tavakkaltu va ‘ala rizqika aftartu."
                 }
-            }
+            },
+            "news_list": [
+                {
+                    "id": 1,
+                    "title": "Ramazon oyi 18-fevraldan boshlanadi",
+                    "desc": "O'zbekiston Musulmonlari idorasi 2026-yilgi Ramazon oyi taqvimini e'lon qildi. Surxondaryo viloyati uchun vaqtlar o'zgacha...",
+                    "date": "2026-01-31",
+                    "category": "Dolzarb"
+                },
+                {
+                    "id": 2,
+                    "title": "Saharlikda qanday taomlar tanovul qilish kerak?",
+                    "desc": "Mutaxassislar Ramazon oyida chanqoqni oldini oluvchi va quvvat beruvchi mahsulotlar ro'yxatini tuzib chiqishdi...",
+                    "date": "2026-02-01",
+                    "category": "Sog'lik"
+                },
+                {
+                    "id": 3,
+                    "title": "Sariosiyo va Termiz vaqtlari farqi",
+                    "desc": "Viloyatning sharqiy va g'arbiy tumanlari o'rtasidagi 5 daqiqalik farq haqida batafsil ma'lumot...",
+                    "date": "2026-02-02",
+                    "category": "Eslatma"
+                }
+            ]
         }
     },
     "уз": {
@@ -110,7 +133,23 @@
                     "title": "Ифторлик дуоси",
                     "text": "Аллоҳумма лака сумту ва бика аманту ва алайка таваккалту ва ала ризқика афтарту."
                 }
-            }
+            },
+            "news_list": [
+                {
+                    "id": 1,
+                    "title": "Рамазон ойи 18-февралдан бошланади",
+                    "desc": "Ўзбекистон Мусулмонлари идораси 2026-йилги Рамазон ойи тақвимини эълон қилди. Сурхондарё вилояти учун вақтлар ўзгача...",
+                    "date": "2026-01-31",
+                    "category": "Долзарб"
+                },
+                {
+                    "id": 2,
+                    "title": "Саҳарликда қандай таомлар тановул қилиш керак?",
+                    "desc": "Мутахассислар Рамазон ойида чанқоқни олдини олувчи ва қувват берувчи маҳсулотлар рўйхатини тузиб чиқишди...",
+                    "date": "2026-02-01",
+                    "category": "Соғлик"
+                }
+            ]
         }
     }
 }
