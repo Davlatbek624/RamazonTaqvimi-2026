@@ -9,6 +9,11 @@ import taqvimData from "../services/Taqvim.json";
 
 const VILOYATLAR = [
   { name: "Toshkent", key: "Toshkent" },
+  { name: "Termiz", key: "Termiz" },
+  { name: "Sho'rchi", key: "Sho'rchi" },
+  { name: "Qumqo'rg'on", key: "Qumqo'rg'on" },
+  { name: "Uzun", key: "Uzun" },
+  { name: "Oltinsoy", key: "Oltinsoy" },
   { name: "Andijon", key: "Andijon" },
   { name: "Namangan", key: "Namangan" },
   { name: "Farg‘ona", key: "Farg‘ona" },
@@ -110,11 +115,10 @@ const Taqvim = () => {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.01 }}
                 key={i}
-                className={`grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl border transition-all items-center ${
-                  isToday(day.sana)
+                className={`grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl border transition-all items-center ${isToday(day.sana)
                     ? "bg-yellow-500/20 border-yellow-500/50 shadow-lg shadow-yellow-500/5"
                     : "bg-white/5 border-white/5 hover:bg-white/10"
-                }`}
+                  }`}
               >
                 <div className="flex flex-col">
                   {/* JSON dagi 'kun' kalitidan foydalanamiz */}
