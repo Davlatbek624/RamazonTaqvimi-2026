@@ -49,7 +49,7 @@ export default function Navbar() {
 
                     {/* Mobil Menu Tugmasi */}
                     <button
-                        className="md:hidden text-[#fbbf24] hover:bg-white/10 p-2 rounded-lg transition-all"
+                        className="min-[1000px]:hidden text-[#fbbf24] hover:bg-white/10 p-2 rounded-lg transition-all"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <Menu size={28} />
