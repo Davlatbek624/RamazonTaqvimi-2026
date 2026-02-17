@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { MapPin, Sun, Moon, ArrowRight } from "lucide-react";
+import { MapPin, Sun, Moon, ArrowRight, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 // JSON faylni import qilamiz
 import taqvimData from "../services/Taqvim.json";
+import { BiChevronDown } from "react-icons/bi";
 
 const VILOYATLAR = [
   { name: "Toshkent", key: "Toshkent" },
@@ -90,6 +91,7 @@ const Taqvim = () => {
                 </option>
               ))}
             </select>
+            <BiChevronDown className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-yellow-500 w-5 h-5" />
           </div>
         </motion.div>
 
