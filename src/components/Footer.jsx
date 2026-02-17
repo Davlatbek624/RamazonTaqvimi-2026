@@ -66,20 +66,22 @@ export default function Footer() {
 
               {/* Instagram */}
               <a 
-                href="#" 
+                href="https://www.instagram.com/624__d/" 
+                target="_blank" 
+                rel="noreferrer" 
                 className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-linear-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:border-transparent transition-all duration-500 group shadow-xl"
               >
                 <FaInstagram size={22} className="group-hover:scale-110 transition-transform" />
               </a>
 
               {/* Telefon - Bosilganda raqam chiqadi */}
-              <a 
+              {/* <a 
                 href="tel:+998919102160" 
                 className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#fbbf24] hover:text-[#022c22] hover:border-[#fbbf24] transition-all duration-500 group shadow-xl relative overflow-hidden"
                 title="Qo'ng'iroq qilish"
               >
                 <FaPhoneAlt size={18} className="group-hover:scale-110 transition-transform" />
-              </a>
+              </a> */}
             </div>
           </div>
 
