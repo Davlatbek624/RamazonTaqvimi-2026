@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ramazon-taqvimi-2026.netlify.app/sitemap.xml
