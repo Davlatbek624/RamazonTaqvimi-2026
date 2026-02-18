@@ -13,6 +13,7 @@ import Taqvim from './pages/Taqvim';
 import Duolar from './pages/Duolar';
 import Yangiliklar from './pages/Yangiliklar';
 import NotFoundPage from './pages/NotFoundPage';
+import Kontakt from './pages/Kontakt';
 
 
 
@@ -53,8 +54,14 @@ const App = () => {
               <Yangiliklar />
             </>
           } />
-
-          {/* 404 - Bunda PageTitle sahifa ichida alohida ishlatiladi */}
+          <Route path='/kontakt'
+            element={
+              <>
+                <PageTitle title={t("titles.boglanish")} />
+                <Kontakt />
+              </>
+            }
+          />
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </main>

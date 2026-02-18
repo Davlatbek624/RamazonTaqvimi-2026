@@ -1,6 +1,16 @@
 {
     "uz": {
         "translation": {
+            "contact": {
+                "subtitle": "Savollaringiz yoki takliflaringiz bo'lsa, bizga yozing.",
+                "name": "Ismingiz",
+                "phone": "Telefon raqamingiz",
+                "message": "Xabaringiz yoki izohingiz...",
+                "send": "Yuborish",
+                "success": "Xabar yuborildi! Tez orada javob beramiz.",
+                "error": "Xatolik yuz berdi. Iltimos qaytadan urinib ko'ring."
+            },
+            "yuklab_olish": "Yuklab Olish",
             "ramazonn": "Ramazon - 2026",
             "ramazon": "RAMAZON",
             "asosiy": "Asosiy",
@@ -81,6 +91,16 @@
     },
     "уз": {
         "translation": {
+            "contact": {
+                "subtitle": "Саволларингиз ёки таклифларингиз бўлса, бизга ёзинг.",
+                "name": "Исмингиз",
+                "phone": "Телефон рақамингиз",
+                "message": "Хабарингиз ёки изоҳингиз...",
+                "send": "Юбориш",
+                "success": "Хабар юборилди! Тез орада жавоб берамиз.",
+                "error": "Хатолик юз берди. Илтимос қайтадан уриниб кўринг."
+            },
+            "yuklab_olish": "Юклаб олиш",
             "ramazonn": "Рамазон - 2026",
             "ramazon": "РАМАЗОН",
             "asosiy": "Асосий",

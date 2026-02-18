@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { MapPin, Sun, Moon, ArrowRight, ChevronDown } from "lucide-react";
+import { MapPin, Sun, Moon, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { BiChevronDown } from "react-icons/bi";
 
 // JSON faylni import qilamiz
 import taqvimData from "../services/Taqvim.json";
-import { BiChevronDown } from "react-icons/bi";
 
 const VILOYATLAR = [
   { name: "Toshkent", key: "Toshkent" },
@@ -41,20 +41,32 @@ const VILOYATLAR = [
 
 const Taqvim = () => {
   const { t } = useTranslation();
+
+  // 1. Initial state ni LocalStorage dan o'qiymiz
+  const [region, setRegion] = useState(() => {
+    return localStorage.getItem("selectedRegion") || "Toshkent";
+  });
+
   const [days, setDays] = useState([]);
-  const [region, setRegion] = useState("Toshkent");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
+
+    // 2. Tanlangan hududni LocalStorage ga saqlaymiz
+    localStorage.setItem("selectedRegion", region);
+
     const selectedData = taqvimData[region];
     if (selectedData) {
       setDays(selectedData);
     }
-    setTimeout(() => setLoading(false), 500);
+
+    // Sun'iy yuklanish effekti
+    const timer = setTimeout(() => setLoading(false), 400);
+    return () => clearTimeout(timer);
   }, [region]);
 
-  // Bugungi kunni aniqlash (DD.MM.YYYY formatida)
+  // Bugungi kunni aniqlash funksiyasi
   const isToday = (dateStr) => {
     const today = new Date();
     const d = String(today.getDate()).padStart(2, '0');
@@ -78,12 +90,12 @@ const Taqvim = () => {
             {t("titles.taqvim")}
           </h1>
 
-          <div className="relative group">
-            <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-500 w-5 h-5" />
+          <div className="relative group w-full md:w-auto">
+            <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-500 w-5 h-5 z-10" />
             <select
               value={region}
               onChange={(e) => setRegion(e.target.value)}
-              className="pl-10 pr-10 py-3 bg-green-900/30 border border-white/10 rounded-2xl appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all cursor-pointer backdrop-blur-md text-white"
+              className="w-full md:w-auto pl-10 pr-10 py-3 bg-green-900/30 border border-white/10 rounded-2xl appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all cursor-pointer backdrop-blur-md text-white font-bold"
             >
               {VILOYATLAR.map((v) => (
                 <option key={v.key} value={v.key} className="bg-[#041d14]">
@@ -91,11 +103,11 @@ const Taqvim = () => {
                 </option>
               ))}
             </select>
-            <BiChevronDown className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-yellow-500 w-5 h-5" />
+            <BiChevronDown className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-yellow-500 w-6 h-6 z-10" />
           </div>
         </motion.div>
 
-        {/* Table Head */}
+        {/* Table Head (Desktop) */}
         <div className="hidden md:grid grid-cols-4 gap-4 p-5 bg-yellow-600/10 rounded-t-3xl border border-white/5 font-bold text-yellow-500 uppercase text-xs tracking-widest">
           <div>Ramazon</div>
           <div>Sana</div>
@@ -118,19 +130,18 @@ const Taqvim = () => {
                 transition={{ delay: i * 0.01 }}
                 key={i}
                 className={`grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl border transition-all items-center ${isToday(day.sana)
-                    ? "bg-yellow-500/20 border-yellow-500/50 shadow-lg shadow-yellow-500/5"
+                    ? "bg-yellow-500/20 border-yellow-500/50 shadow-lg shadow-yellow-500/10 scale-[1.02]"
                     : "bg-white/5 border-white/5 hover:bg-white/10"
                   }`}
               >
                 <div className="flex flex-col">
-                  {/* JSON dagi 'kun' kalitidan foydalanamiz */}
                   <span className="text-yellow-500 font-black text-xl">{day.kun}</span>
                   <span className="text-[10px] uppercase opacity-40">Ramazon</span>
                 </div>
 
                 <div className="flex flex-col md:items-start items-end">
-                  {/* JSON dagi 'sana' kalitidan foydalanamiz */}
                   <span className="text-sm font-semibold">{day.sana}</span>
+                  <span className="text-[10px] uppercase opacity-40 md:hidden">Sana</span>
                 </div>
 
                 <div className="flex flex-col items-start gap-1">
@@ -148,8 +159,12 @@ const Taqvim = () => {
         </div>
 
         {/* Footer Button */}
-        <motion.div className="mt-12 flex justify-center md:justify-end">
-          <Link to="/duolar" className="group flex items-center gap-4 py-4 px-8 bg-yellow-600 hover:bg-yellow-500 text-black font-black rounded-2xl transition-all uppercase tracking-tighter">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="mt-12 flex justify-center md:justify-end"
+        >
+          <Link to="/duolar" className="group flex items-center gap-4 py-4 px-8 bg-yellow-600 hover:bg-yellow-500 text-black font-black rounded-2xl transition-all uppercase tracking-tighter shadow-xl shadow-yellow-600/20">
             {t("home.btnDuas")}
             <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform" />
           </Link>
