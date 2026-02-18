@@ -1,21 +1,33 @@
 <!doctype html>
-<html lang="uz"> <head>
+<html lang="uz">
+
+<head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/webp" href="/src/assets/logo.webp" />
-  <link rel="manifest" href="/public/manifest.json" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
+  <meta name="theme-color" content="#000000" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Ramazon2026" />
+
+  <link rel="manifest" href="/manifest.json" />
+
   <meta name="google-site-verification" content="BxBo7q3ImI0epWXK_PtaHPj7XrN_5DEI9nb2Tx055m8" />
 
   <title>Ramazon Taqvimi 2026 | Saharlik va Iftorlik Vaqtlari (O'zbekiston)</title>
-  <meta name="description" content="2026-yilgi Ramazon taqvimi. Toshkent va barcha viloyatlar uchun aniq saharlik va iftorlik vaqtlari, og'iz yopish va ochish duolari hamda kunlik hikmatlar." />
-  <meta name="keywords" content="Ramazon taqvimi 2026, iftorlik vaqti, saharlik vaqti, ro'za duosi, Toshkent ramazon taqvimi, 2026 ro'za jadvali" />
+  <meta name="description"
+    content="2026-yilgi Ramazon taqvimi. Toshkent va barcha viloyatlar uchun aniq saharlik va iftorlik vaqtlari, og'iz yopish va ochish duolari hamda kunlik hikmatlar." />
+  <meta name="keywords"
+    content="Ramazon taqvimi 2026, iftorlik vaqti, saharlik vaqti, ro'za duosi, Toshkent ramazon taqvimi, 2026 ro'za jadvali" />
   <meta name="author" content="Ramazon Taqvimi Jamoasi" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Ramazon Taqvimi 2026 - Aniq va Qulay" />
-  <meta property="og:description" content="O'zbekiston bo'ylab barcha shaharlar uchun aniq Ramazon vaqtlari va foydali duolar." />
-  <meta property="og:image" content="/og-image.jpg" /> <meta property="og:url" content="https://ramazon-taqvimi-2026.netlify.app/" />
+  <meta property="og:description"
+    content="O'zbekiston bo'ylab barcha shaharlar uchun aniq Ramazon vaqtlari va foydali duolar." />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:url" content="https://ramazon-taqvimi-2026.netlify.app/" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Ramazon Taqvimi 2026" />
@@ -26,12 +38,22 @@
 
 <body>
   <noscript>
-    <h1>Ramazon Taqvimi 2026</h1>
-    <p>O'zbekiston bo'ylab saharlik va iftorlik vaqtlarini onlayn ko'ring.</p>
+    <div style="text-align: center; padding: 20px;">
+      <h1>Ramazon Taqvimi 2026</h1>
+      <p>Kechirasiz, ushbu ilova ishlashi uchun JavaScript-ni yoqishingiz kerak.</p>
+    </div>
   </noscript>
 
   <div id="root"></div>
+
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
 </body>
 
 </html>
