@@ -5,30 +5,57 @@ import { Calendar, X, ArrowRight, Newspaper, Sparkles } from "lucide-react";
 
 const NEWS_CONTENT = {
   uz: [
-    { id: 1, title: "Ramazon - poklanish oyi", fullText: "Ramazon oyi nafaqat jismoniy, balki ma'naviy poklanish davridir. Bu oyda qilinadigan har bir xayrli amalning savobi ko'paytirib beriladi. Surxondaryo viloyatining barcha masjidlarida taroze namozlariga tayyorgarlik ko'rilmoqda. Ma'naviy yuksalishda davom eting!", date: "2026-02-18", tag: "Ma'rifat" },
-    { id: 2, title: "Saharlikning shifobaxsh xususiyatlari", fullText: "Saharlik qilish sunnat amal bo'lib, unda katta baraka bor. Tibbiyot mutaxassislari saharlikda murakkab uglevodlar (bo'tqalar), xurmo va ko'proq suv ichishni tavsiya qilishadi. Bu kun davomida organizmning tetik turishini ta'minlaydi.", date: "2026-02-19", tag: "Salomatlik" },
-    { id: 3, title: "Iftorlik duosi va uning fazilati", fullText: "Iftor vaqti duo ijobat bo'ladigan damdir. Duo: 'Allohumma laka sumtu va bika amantu va 'alayka tavakkaltu va 'ala rizqika aftartu'. Ma'nosi: 'Allohim, Sen uchun ro'za tutdim, Senga iymon keltirdim va Senga tavakkal qildim va bergan rizqing bilan iftor qildim'.", date: "2026-02-20", tag: "Duo" },
-    { id: 4, title: "Qur'on tilovati - Ramazon ziynati", fullText: "Ramazon - Qur'on oyidir. Har kuni kamida bir pora yoki bir necha sahifa Qur'on o'qish qalbni nurlantiradi. Bu oyda Qur'onni tushunib o'qish va unga amal qilish eng oliy maqsadlardan biridir.", date: "2026-02-21", tag: "Ibodat" },
-    { id: 5, title: "Zakot va Fitr sadaqasi miqdori", fullText: "2026-yil uchun zakot nisobi va fitr sadaqasi miqdorlari e'lon qilindi. Fitr sadaqasini Ramazon hayitidan oldin berish, ro'zadagi kamchiliklarga kafforat bo'ladi va miskinlar ko'nglini ko'taradi.", date: "2026-02-22", tag: "Fiqh" },
-    { id: 6, title: "Sila-i rahm: Qarindoshlar bilan aloqa", fullText: "Ramazon oyida arazlashganlar bilan yarashish va qarindoshlarni ziyorat qilish katta ajrga ega. Birinchi bo'lib qadam tashlagan kishi Alloh huzurida suyukliroqdir. Yaqinlaringizga qo'ng'iroq qiling yoki xabar yuboring.", date: "2026-02-23", tag: "Odob" },
-    { id: 7, title: "Laylatul Qadr kechasini izlang", fullText: "Ramazonning oxirgi o'n kunligida ming oydan afzal bo'lgan Qadr kechasi yashiringan. Bu kechalarni bedor o'tkazish va ko'p duo qilish gunohlarning kechirilishiga sabab bo'ladi.", date: "2026-02-24", tag: "Fayz" },
-    { id: 8, title: "Taroze namozining ahamiyati", fullText: "Taroze namozi Ramazon oyining maxsus ibodati bo'lib, jamoat bilan o'qish sunnatdir. Bu namoz mo'minning iymonini mustahkamlaydi va jismoniy charchoqni ma'naviy huzurga aylantiradi.", date: "2026-02-25", tag: "Ibodat" },
-    { id: 9, title: "Xayr-ehson qilishning barakasi", fullText: "Ramazonda qilingan ehsonning barakasi bo'lakcha. Faqat pul bilan emas, balki shirin so'z, tabassum va yordamga muhtojlarga ko'maklashish bilan ham ehson qilish mumkin.", date: "2026-02-26", tag: "Ehson" },
-    { id: 10, title: "Ramazonning so'nggi kunlari", fullText: "Ramazon oyi g'animatdir. Oxirgi kunlarda ibodatlarni yanada ko'paytirish, ko'p istig'for aytish tavsiya etiladi. 'Subhanallohi va bihamdihi' tasbehini ko'p takrorlang.", date: "2026-02-27", tag: "Tavsiya" }
+    { id: 1, title: "Ramazon – sabr va taqvo oyi", fullText: "Ramazon oyida sabr, taqvo va ixlos yanada mustahkamlanadi. Har bir amal niyatga qarab baholanadi.", date: "2026-02-18", tag: "Ma'rifat" },
+    { id: 2, title: "Ro‘zaning inson ruhiyatiga ta’siri", fullText: "Ro‘za nafaqat tanani, balki qalbni ham poklaydi. U insonni nafs ustidan g‘alaba qilishga o‘rgatadi.", date: "2026-02-19", tag: "Ma'naviyat" },
+    { id: 3, title: "Saharlikni o‘tkazib yubormang", fullText: "Saharlikda baraka bor. Hatto bir qultum suv bilan bo‘lsa ham saharlik qilish tavsiya etiladi.", date: "2026-02-20", tag: "Salomatlik" },
+    { id: 4, title: "Iftorni vaqtida ochish fazilati", fullText: "Payg‘ambarimiz ﷺ iftorni shoshilinch ochishni tavsiya qilganlar. Bu sunnat amal hisoblanadi.", date: "2026-02-21", tag: "Sunnat" },
+    { id: 5, title: "Qur’on oyida Qur’on bilan bo‘ling", fullText: "Ramazon Qur’on nozil bo‘lgan oy. Har kuni kamida bir necha oyat o‘qish qalbni yoritadi.", date: "2026-02-22", tag: "Ibodat" },
+
+    { id: 6, title: "Taroveh – Ramazon ziynati", fullText: "Taroveh namozi Ramazon kechalariga fayz bag‘ishlaydi. Jamoat bilan o‘qilishi sunnatdir.", date: "2026-02-23", tag: "Ibodat" },
+    { id: 7, title: "Zakot – jamiyat pokligi", fullText: "Zakot boylikni poklaydi va kambag‘allar haqqini ado etadi.", date: "2026-02-24", tag: "Fiqh" },
+    { id: 8, title: "Fitr sadaqasi kimlarga beriladi", fullText: "Fitr sadaqasi muhtojlarga beriladi va ro‘zadagi kamchiliklarga kafforat bo‘ladi.", date: "2026-02-25", tag: "Fiqh" },
+    { id: 9, title: "Qadr kechasini g‘animat biling", fullText: "Qadr kechasi ming oydan afzal. Bu kechani ibodat bilan o‘tkazish ulkan savobdir.", date: "2026-02-26", tag: "Fayz" },
+    { id: 10, title: "Ro‘zadorning duosi rad etilmaydi", fullText: "Ro‘zador iftor payti qilgan duosi ijobat bo‘lishiga va’da qilingan.", date: "2026-02-27", tag: "Duo" },
+
+    { id: 11, title: "Sabr – ro‘zaning kaliti", fullText: "Ochlik va chanqoqlik sabrni kuchaytiradi va iymonni mustahkamlaydi.", date: "2026-02-28", tag: "Tavsiya" },
+    { id: 12, title: "Tilni g‘iybatdan saqlang", fullText: "Ro‘za faqat och yurish emas, balki yomon so‘zlardan tiyilishdir.", date: "2026-03-01", tag: "Odob" },
+    { id: 13, title: "Bolalarga Ramazonni taniting", fullText: "Ramazon bolalar tarbiyasida muhim ahamiyatga ega. Ularga mehr bilan tushuntiring.", date: "2026-03-02", tag: "Tarbia" },
+    { id: 14, title: "Sadaqa baloni qaytaradi", fullText: "Yashirin berilgan sadaqa Allohning g‘azabini o‘chiradi.", date: "2026-03-03", tag: "Ehson" },
+    { id: 15, title: "Ota-onani rozi qiling", fullText: "Ramazon ota-onaga xizmat qilish uchun eng yaxshi fursatdir.", date: "2026-03-04", tag: "Odob" },
+
+    { id: 16, title: "Ro‘za sog‘liq uchun foydali", fullText: "Shifokorlar ro‘zaning organizmni tozalashdagi foydasini ta’kidlashadi.", date: "2026-03-05", tag: "Salomatlik" },
+    { id: 17, title: "Ko‘p istig‘for ayting", fullText: "Ramazon mag‘firat oyi. Istig‘for qalbni poklaydi.", date: "2026-03-06", tag: "Tavsiya" },
+    { id: 18, title: "Masjidlarni to‘ldiring", fullText: "Ramazonda masjidlar mo‘minlar bilan to‘ladi va jamoat ruhi mustahkamlanadi.", date: "2026-03-07", tag: "Ibodat" },
+    { id: 19, title: "Yolg‘on ro‘zani buzadi", fullText: "Yolg‘on, g‘iybat va tuhmat ro‘zaning savobini kamaytiradi.", date: "2026-03-08", tag: "Ogohlantirish" },
+    { id: 20, title: "Ramazon – imkoniyat oyi", fullText: "Bu oyda o‘zingizni o‘zgartirish va yaxshilikka odatlanish mumkin.", date: "2026-03-09", tag: "Ma'naviyat" },
+
   ],
+
   uz_kr: [
-    { id: 1, title: "Рамазон - покланиш ойи", fullText: "Рамазон ойи нафақат жисмоний, балки маънавий покланиш давридир. Бу ойда қилинадиган ҳар бир хайрли амалнинг савоби кўпайтириб берилади. Сурхондарё вилоятининг барча масжидларида тарозе намозларига тайёргарлик кўрилмоқда.", date: "2026-02-18", tag: "Маърифат" },
-    { id: 2, title: "Саҳарликнинг шифобахш хусусиятлари", fullText: "Саҳарлик қилиш суннат амал бўлиб, унда катта барака бор. Тиббиёт мутахассислари саҳарликда мураккаб углеводлар (бўтқалар), хурмо ва кўпроқ сув ичишни тавсия қилишади. Бу кун давомида организмнинг тетик туришини таъминлайди.", date: "2026-02-19", tag: "Саломатлик" },
-    { id: 3, title: "Ифторлик дуоси ва унинг фазилати", fullText: "Ифтор вақти дуо ижобат бўладиган дамдир. Дуо: 'Аллоҳумма лака сумту ва бика аманту ва 'алайка таваккалту ва 'ала ризқиқа афтарту'. Маъноси: 'Аллоҳим, Сен учун рўза тутдим, Сенга иймон келтирдим ва Сенга таваккал қилдим ва берган ризқинг билан ифтор қилдим'.", date: "2026-02-20", tag: "Дуо" },
-    { id: 4, title: "Қуръон тиловати - Рамазон зийнати", fullText: "Рамазон - Қуръон ойидир. Ҳар куни камида бир пора ёки бир неcha саҳифа Қуръон ўқиш қалбни нурлантиради. Бу ойда Қуръонни тушуниб ўқиш ва унга амал қилиш энг олий мақсадлардан биридир.", date: "2026-02-21", tag: "Ибодат" },
-    { id: 5, title: "Закот ва Фитр садақаси миқдори", fullText: "2026-йил учун закот нисоби ва фитр садақаси миқдорлари эълон қилинди. Фитр садақасини Рамазон ҳайитидан олдин бериш, рўзадаги камчиликларга каффорат бўлади ва мискинлар кўнглини кўтаради.", date: "2026-02-22", tag: "Фиқҳ" },
-    { id: 6, title: "Сила-и раҳм: Қариндошлар билан алоқа", fullText: "Рамазон ойида аразлашганлар билан ярашиш ва қариндошларни зиёрат қилиш катта ажрга эга. Биринчи бўлиб қадам ташлаган киши Аллоҳ ҳузурида суюклироқдир.", date: "2026-02-23", tag: "Одоб" },
-    { id: 7, title: "Лайлатул Қадр кечасини изланг", fullText: "Рамазоннинг охирги ўн кунлигида минг ойдан афзал бўлган Қадр кечаси яширинган. Бу кечаларни бедор ўтказиш ва кўп дуо қилиш гуноҳларнинг кечирилишига сабаб бўлади.", date: "2026-02-24", tag: "Файз" },
-    { id: 8, title: "Тарозе намозининг аҳамияти", fullText: "Тарозе намози Рамазон ойининг махсус ибодати бўлиб, жамоат билан ўқиш суннатдир. Бу намоз мўминнинг иймонини мустаҳкамлайди ва жисмоний чарчоқни маънавий ҳузурга айлантиради.", date: "2026-02-25", tag: "Ибодат" },
-    { id: 9, title: "Хайр-эҳсон қилишнинг баракаси", fullText: "Рамазонда қилинган эҳсоннинг баракаси бўлакча. Фақат пул билан эмас, балки ширин сўз, табассум ва ёрдамга муҳтожларга кўмаклашиш билан ҳам эҳсон қилиш мумкин.", date: "2026-02-26", tag: "Эҳсон" },
-    { id: 10, title: "Рамазоннинг сўнгги кунлари", fullText: "Рамазон ойи ғаниматдир. Охирги кунларда ибодатларни янада кўпайтириш, кўп истиғфор айтиш тавсия этилади. 'Субҳаналлоҳи ва биҳамдиҳи' тасбеҳини кўп такрорланг.", date: "2026-02-27", tag: "Тавсия" }
+    { id: 1, title: "Рамазон – сабр ва тақво ойи", fullText: "Рамазон ойида сабр, тақво ва ихлос мустаҳкамланади.", date: "2026-02-18", tag: "Маърифат" },
+    { id: 2, title: "Рўзанинг руҳиятга таъсири", fullText: "Рўза инсонни нафс устидан ғалаба қилишга ўргатади.", date: "2026-02-19", tag: "Маънавият" },
+    { id: 3, title: "Саҳарликда барака бор", fullText: "Ҳатто бир қултум сув билан бўлса ҳам саҳарлик қилиш суннатдир.", date: "2026-02-20", tag: "Саломатлик" },
+    { id: 4, title: "Ифторни шошиб очиш", fullText: "Ифторни ўз вақтида очиш Пайғамбаримиз ﷺ суннатларидандир.", date: "2026-02-21", tag: "Суннат" },
+    { id: 5, title: "Қуръон ойида Қуръон билан бўлинг", fullText: "Рамазон – Қуръон нозил бўлган ойдир.", date: "2026-02-22", tag: "Ибодат" },
+
+    { id: 6, title: "Таровеҳ – Рамазон зийнати", fullText: "Таровеҳ намози Рамазон кечаларига файз бағишлайди.", date: "2026-02-23", tag: "Ибодат" },
+    { id: 7, title: "Закот – жамият поклиги", fullText: "Закот бойликни поклайди ва камбағаллар ҳаққини адо этади.", date: "2026-02-24", tag: "Фиқҳ" },
+    { id: 8, title: "Фитр садақаси кимларга берилади", fullText: "Фитр садақаси муҳтожларга берилади ва рўзадаги камчиликларга каффорат бўлади.", date: "2026-02-25", tag: "Фиқҳ" },
+    { id: 9, title: "Қадр кечасини ғанимат билинг", fullText: "Қадр кечаси минг ойдан афзал. Бу кечани ибодат билан ўтказиш улкан савобдир.", date: "2026-02-26", tag: "Файз" },
+    { id: 10, title: "Рўзадорнинг дуоси рад этилмайди", fullText: "Рўзадор ифтор пайти қилган дуоси ижобат бўлишига ваъда қилинган.", date: "2026-02-27", tag: "Дуо" },
+    { id: 11, title: "Сабр – рўзанинг калити", fullText: "Очлик ва чанқоқлик сабрни кучайтиради ва иймонни мустаҳкамлайди.", date: "2026-02-28", tag: "Тавсия" },
+    { id: 12, title: "Тилни ғийбатдан сақланг", fullText: "Рўза фақат оч юриш эмас, балки ёмон сўзлардан тийилишдир.", date: "2026-03-01", tag: "Одоб" },
+    { id: 13, title: "Болаларга Рамазонни танитинг", fullText: "Рамазон болалар тарбиясида муҳим аҳамиятга эга. Уларга меҳр билан тушунтиринг.", date: "2026-03-02", tag: "Тарбия" },
+    { id: 14, title: "Садақа балони қайтаради", fullText: "Яширин берилган садақа Аллоҳнинг ғазабини ўчиради.", date: "2026-03-03", tag: "Эҳсон" },
+    { id: 15, title: "Ота-онани рози қилинг", fullText: "Рамазон ота-онага хизмат қилиш учун энг яхши фурсатдир.", date: "2026-03-04", tag: "Одоб" },
+    { id: 16, title: "Рўза соғлиқ учун фойдали", fullText: "Шифокорлар рўзанинг организмни тозалашдаги фойдасини таъкидлашади.", date: "2026-03-05", tag: "Саломатлик" },
+    { id: 17, title: "Кўп истиғфор айтиң", fullText: "Рамазон мағфират ойи. Истиғфор қалбни поклайди.", date: "2026-03-06", tag: "Тавсия" },
+    { id: 18, title: "Масжидларни тўлдиринг", fullText: "Рамазонда масжидлар мўминлар билан тўлади ва жамоат руҳи мустаҳкамланади.", date: "2026-03-07", tag: "Ибодат" },
+    { id: 19, title: "Ёлғон рўзани бузади", fullText: "Ёлғон, ғийбат ва тухмат рўзанинг савобини камайтиради.", date: "2026-03-08", tag: "Огоҳлантириш" },
+    { id: 20, title: "Рамазон – имконият ойи", fullText: "Бу ойда ўзингизни ўзгартириш ва яхшиликка одатланиш мумкин.", date: "2026-03-09", tag: "Маънавият" }
   ]
-};
+};      
+
 
 const Yangiliklar = () => {
   const { t, i18n } = useTranslation();
